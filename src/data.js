@@ -1,16 +1,20 @@
 export const posts = [
-    {
-      id: 1,
-      username:"john",
-      fullname: "John Keller",
-      userImg: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      postImg: "https://images.pexels.com/photos/9730025/pexels-photo-9730025.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    },
-    {
-      id: 2,
-      username:"monica",
-      fullname: "Monica Stan",
-      userImg: "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      postImg: "https://images.pexels.com/photos/3497624/pexels-photo-3497624.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    },
-  ];
+  {
+    id: 1,
+    username: "kelly",
+    fullname: "Kelly Gallegos",
+    userImg:
+      "https://e1.pxfuel.com/desktop-wallpaper/909/985/desktop-wallpaper-15-most-handsome-celebrities-of-hollywood-by-kelly-gallegos-handsome-actors.jpg",
+    postImg:
+      "https://www.disneytouristblog.com/wp-content/uploads/2019/03/main-street-dawn-wide-magic-kingdom-disney-world-emh.jpg",
+  },
+  {
+    id: 2,
+    username: "Juli",
+    fullname: "Julianne Moore",
+    userImg:
+      "https://images.news18.com/ibnlive/uploads/2022/07/julianne-moore.jpg",
+    postImg:
+      "https://imageio.forbes.com/specials-images/imageserve/6468ea7be5b5bee9d12e9948/eiffel-tour-and-Paris-cityscape/0x0.jpg?format=jpg&height=1835&width=2767",
+  },
+];
