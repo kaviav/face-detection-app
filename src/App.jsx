@@ -11,7 +11,11 @@ const App = () => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
+    // const socket = io("https://server-domain.com"); from socket.io documentation
+
+    //
     setSocket(io("http://localhost:5000"));
+    // console.log(socket)
   }, []);
 
   useEffect(() => {
@@ -24,13 +28,13 @@ const App = () => {
         <>
           <Navbar socket={socket} />
           {posts.map((post) => (
-            <Card key={post.id} post={post} socket={socket} user={user}/>
+            <Card key={post.id} post={post} socket={socket} user={user} />
           ))}
           <span className="username">{user}</span>
         </>
       ) : (
         <div className="login">
-          <h2>Lama App</h2>
+          <h2>Chat App</h2>
           <input
             type="text"
             placeholder="username"

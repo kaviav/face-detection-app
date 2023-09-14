@@ -10,7 +10,7 @@ export const posts = [
   },
   {
     id: 2,
-    username: "Juli",
+    username: "juli",
     fullname: "Julianne Moore",
     userImg:
       "https://images.news18.com/ibnlive/uploads/2022/07/julianne-moore.jpg",

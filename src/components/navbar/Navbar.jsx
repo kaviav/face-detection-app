@@ -1,8 +1,11 @@
 import "./navbar.css";
-import Notification from "../../img/notification.svg";
-import Message from "../../img/message.svg";
-import Settings from "../../img/settings.svg";
+
 import { useEffect, useState } from "react";
+import {
+  MessageOutlined,
+  NotificationsOutlined,
+  SettingsRounded,
+} from "@mui/icons-material";
 
 const Navbar = ({ socket }) => {
   const [notifications, setNotifications] = useState([]);
@@ -36,20 +39,19 @@ const Navbar = ({ socket }) => {
 
   return (
     <div className="navbar">
-      <span className="logo">Lama App</span>
+      <span className="logo">Like it</span>
       <div className="icons">
         <div className="icon" onClick={() => setOpen(!open)}>
-          <img src={Notification} className="iconImg" alt="" />
-          {
-notifications.length >0 &&
+          <NotificationsOutlined className="iconImg" />
+          {notifications.length > 0 && (
             <div className="counter">{notifications.length}</div>
-          }
+          )}
         </div>
         <div className="icon" onClick={() => setOpen(!open)}>
-          <img src={Message} className="iconImg" alt="" />
+          <MessageOutlined className="iconImg" />
         </div>
         <div className="icon" onClick={() => setOpen(!open)}>
-          <img src={Settings} className="iconImg" alt="" />
+          <SettingsRounded className="iconImg" />
         </div>
       </div>
       {open && (
